@@ -1,4 +1,4 @@
-# 📋 **Praktikums-Ablaufplan: Passwort-Generator Entwicklung**
+# 📋 **Projekt Ablaufplan: Passwort-Generator**
 
 ## 📚 **Zusätzliche Ressourcen:**
 
