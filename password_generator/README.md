@@ -10,6 +10,19 @@
 
 ---
 
+## 🎯 **Nach jedem Schritt:**
+
+### **Checkpoint-Aufgaben:**
+- [ ] Kurze Reflexion: Was lief gut? Was war schwierig?
+- [ ] Fragen für nächsten Schritt notieren
+- [ ] Arbeitsstand dokumentieren
+- [ ] Funktionalität testen
+
+### **Debugging-Tipps:**
+- [ ] `print()` Statements für Debugging nutzen
+
+---
+
 ## 🚀 **Schritt 1: CLI-Grundlagen & Python-Basics**
 
 ### **📋 Features Checkliste für diesen Schritt:**
@@ -259,7 +272,7 @@
    - Text-Widget mit Scrollbar
    - Parent-Child Fenster-Beziehungen
 
----
+<br/>
 
 ## 🚀 **Schritt 6: Professionelle Features & Finale Version**
 
@@ -335,13 +348,3 @@
   - Wichtigste Lerninhalte zusammenfassen
   - Best Practices diskutieren
   - Verbesserungsvorschläge besprechen
-
----
-
-## 🎯 **Nach jedem Schritt:**
-
-### **Checkpoint-Aufgaben:**
-- [ ] Kurze Reflexion: Was lief gut? Was war schwierig?
-- [ ] Fragen für nächsten Schritt notieren
-- [ ] Arbeitsstand dokumentieren
-- [ ] Funktionalität testen
