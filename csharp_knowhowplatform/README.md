@@ -79,7 +79,8 @@ Entwicklung einer internen Plattform für Know-how, Zertifikate und Wissenstrans
 
 ---
 
-**!!  Ab hier hast du komplette Freiheit wie du es baust, hauptsache die Grundlegenden Funktionen sind erfüllt, also falls du Ideen für eigene hast bau es ruhig ein**
+<br><br>
+## Ab hier hast du komplette Freiheit wie du es baust, hauptsache die Grundlegenden Funktionen sind erfüllt, also falls du Ideen für eigene hast bau es ruhig ein
 
 ## **Meilenstein 3: Home - Suche & Matching**
 
@@ -105,8 +106,9 @@ Entwicklung einer internen Plattform für Know-how, Zertifikate und Wissenstrans
 
 ---
 
-**!! Ab hier setze ich dir keine Aufgaben mehr, da du selbst planen sollst.** 
-- Ab hier baust du eigene API MicroServices (ohne Frontend) welche später angebunden werden können aber eigenständig laufen
+<br><br>
+##  Ab hier setze ich dir keine Aufgaben mehr, da du selbst planen sollst.
+- Jedoch wichtig: Du baust eigene API MicroServices (ohne Frontend) welche später angebunden werden können aber eigenständig laufen
 
 
 ## **Meilenstein 5: Wissensspeicher - eigener Webservice (optional, fortgeschritten)**
@@ -132,6 +134,7 @@ Entwicklung einer internen Plattform für Know-how, Zertifikate und Wissenstrans
 
 ---
 
+<br><br>
 ## **Abschluss & Refactoring**
 
 **Ziel:** Doku, Präsentation, Codequalität
@@ -146,6 +149,7 @@ Entwicklung einer internen Plattform für Know-how, Zertifikate und Wissenstrans
 
 ---
 
+<br><br>
 ## **Bonus-Meilenstein: Docker & Orchestrierung (optional, für Deployment und Teamarbeit)**
 
 **Ziel:** Deployment mit Docker Compose, lokale Infrastruktur und Team-Onboarding vereinfachen
