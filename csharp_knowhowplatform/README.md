@@ -12,9 +12,7 @@ Entwicklung einer internen Plattform für Know-how, Zertifikate und Wissenstrans
 - Datenzugriff: **Entity Framework Core**
 - Microservice-Kommunikation: **REST API** (optional: RabbitMQ)
 
----
-
-## **Wichtige Hinweise**
+### **Wichtige Hinweise**
 - Ich habe dir in jeden Abschnitt Lernlinks gepackt die dir weiter helfen  
   - Microsoft Learn bietet viele wichtige Informationen 
   - Baue ruhig erstmal in eigenen Projekt die Tutorials nach und dann wenn du es kannst erst in deine App 
@@ -25,15 +23,20 @@ Entwicklung einer internen Plattform für Know-how, Zertifikate und Wissenstrans
 - bei jedem wichtigen, funktionsfähigen Entwicklungsschritt mache einen **Git Commit** damit du dein Fortschritt nicht verlierst und immer wieder bei Fehlern zurücksetzten kannst
     - Git Tutorial: https://rogerdudler.github.io/git-guide/index.de.html
 
-## **Vorbereitungen** 
+### **Vorbereitungen** 
 - [ ] Installiere dir **Visual Studio** (falls noch nicht installiert)
   - Paket **Webentwicklung** (ASP.NET) wird benötigt
   - (optional) .NET-Desktopentwicklung   
 - [ ] Installiere dir MSSQL Server oder Postgres 
 
----
+<br>
 
-## **Meilenstein 1: Projekt Grundstruktur anlegen**
+---
+<br>
+
+## Sprint 1 
+
+### **Meilenstein 1: Projekt Grundstruktur anlegen**
 
 **Ziel:** Projektstruktur und erste Modelle
 **Empfohlene Technologien:**  
@@ -54,9 +57,8 @@ Entwicklung einer internen Plattform für Know-how, Zertifikate und Wissenstrans
 - [ ] Entity Framework Core über Nuget installieren (Provider je nach DB wählen: [Postgres](https://www.nuget.org/packages/Npgsql.EntityFrameworkCore.PostgreSQL), [MSSQL](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer))
 - [ ] Grundstruktur commiten 
 
----
 
-## **Meilenstein 2: Datenmodell & User/Skill Service**
+### **Meilenstein 2: Datenmodell & User/Skill Service**
 
 **Ziel:** User können sich registrieren, einloggen und ihr Know-how (Skills, Zertifikate) verwalten
 
@@ -80,9 +82,10 @@ Entwicklung einer internen Plattform für Know-how, Zertifikate und Wissenstrans
 ---
 
 <br><br>
-## Ab hier hast du komplette Freiheit wie du es baust, hauptsache die Grundlegenden Funktionen sind erfüllt, also falls du Ideen für eigene hast bau es ruhig ein
+## Sprint 2
+Ab hier hast du komplette Freiheit wie du es baust, hauptsache die Grundlegenden Funktionen sind erfüllt, also falls du Ideen für eigene hast bau es ruhig ein
 
-## **Meilenstein 3: Home - Suche & Matching**
+### **Meilenstein 3: Home - Suche & Matching**
 
 **Ziel:** User können gezielt nach Know-how im Unternehmen suchen, Hilfe Anfragen stellen und sich für Hilfestellungen melden
 
@@ -93,9 +96,7 @@ Entwicklung einer internen Plattform für Know-how, Zertifikate und Wissenstrans
   - Eigenes Modell für Anfrage mit CRUD
   - UI: Anfrage Formular, Übersicht, Möglichkeit sich zurückzumelden 
 
----
-
-## **Meilenstein 4: Know-how-Transfer**
+### **Meilenstein 4: Know-how-Transfer**
 
 **Ziel:** Nutzer können KnowHow Transfers erstellen oder Anfragen (beachte das abzubilden). Andere Nutzer können sich anmelden als Hörer oder Speaker. 
 
@@ -107,11 +108,12 @@ Entwicklung einer internen Plattform für Know-how, Zertifikate und Wissenstrans
 ---
 
 <br><br>
-##  Ab hier setze ich dir keine Aufgaben mehr, da du selbst planen sollst.
+## Sprint 3
+Ab hier setze ich dir keine Aufgaben mehr, da du selbst planen sollst.
 - Jedoch wichtig: Du baust eigene API MicroServices (ohne Frontend) welche später angebunden werden können aber eigenständig laufen
 
 
-## **Meilenstein 5: Wissensspeicher - eigener Webservice (optional, fortgeschritten)**
+### **Meilenstein 5: Wissensspeicher - eigener Webservice (optional, fortgeschritten)**
 
 **Ziel:** Beiträge/Vorträge im System ablegen, durchsuchen, verknüpfen
 
@@ -119,9 +121,7 @@ Entwicklung einer internen Plattform für Know-how, Zertifikate und Wissenstrans
 - REST, eigene API, eigene Tabellen 
 - optional eigene DB - z.B. bei Postgres in ein Cluster möglich, bei MSSQL musst du schauen ob es deine Version zulässt
 
----
-
-## **Meilenstein 6: Notification-Service - eigener Webservice (optional, fortgeschritten)**
+### **Meilenstein 6: Notification-Service - eigener Webservice (optional, fortgeschritten)**
 
 **Ziel:** Asynchrone Benachrichtigungen bei Transfers/Anfragen
 
