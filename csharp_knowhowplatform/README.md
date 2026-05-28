@@ -39,6 +39,17 @@ Entwicklung einer internen Plattform für Know-how, Zertifikate und Wissenstrans
 ### **Meilenstein 1: Projekt Grundstruktur anlegen**
 
 **Ziel:** Projektstruktur und erste Modelle
+
+### **Features-Checkliste (einfach erklärt):**
+- [ ] Projekt startet lokal ohne Fehler.
+  - Beispiel: Du kannst die Startseite im Browser öffnen.
+- [ ] Datenbank-Anbindung ist vorbereitet (PostgreSQL oder MSSQL).
+  - Beispiel: In der Konfiguration steht genau eine DB-Verbindung.
+- [ ] Erste Grundmodelle sind angelegt.
+  - Beispiel: Es gibt bereits ein einfaches User-Modell.
+- [ ] Der aktuelle Stand ist im Git-Repository gespeichert.
+  - Beispiel: Nach dem Setup gibt es einen ersten Commit.
+
 **Empfohlene Technologien:**  
 - Git, ASP.NET Core WebAPI, Entity Framework Core
 
@@ -61,6 +72,16 @@ Entwicklung einer internen Plattform für Know-how, Zertifikate und Wissenstrans
 ### **Meilenstein 2: Datenmodell & User/Skill Service**
 
 **Ziel:** User können sich registrieren, einloggen und ihr Know-how (Skills, Zertifikate) verwalten
+
+### **Features-Checkliste (einfach erklärt):**
+- [ ] Beziehungen zwischen Usern, Skills und Zertifikaten sind klar definiert.
+  - Beispiel: Ein User kann mehrere Skills haben.
+- [ ] Für alle Kernobjekte gibt es CRUD-Funktionen.
+  - Beispiel: Skill anlegen, anzeigen, bearbeiten und löschen.
+- [ ] Es gibt eine einfache Profilansicht im Frontend.
+  - Beispiel: Nutzer sieht eigene Skills auf einer Seite.
+- [ ] Registrierung und Login funktionieren mindestens in einer Basisversion.
+  - Beispiel: Neuer Nutzer kann Konto anlegen und sich anmelden.
 
 **Empfohlene Technologien:**
 - ASP.NET Core WebAPI, Entity Framework Core, JWT Auth, Razor/Blazor/React
@@ -89,6 +110,16 @@ Ab hier hast du komplette Freiheit wie du es baust, hauptsache die Grundlegenden
 
 **Ziel:** User können gezielt nach Know-how im Unternehmen suchen, Hilfe Anfragen stellen und sich für Hilfestellungen melden
 
+### **Features-Checkliste (einfach erklärt):**
+- [ ] Suche findet passende Personen oder Inhalte.
+  - Beispiel: Suche nach „C#" zeigt Nutzer mit C#-Skill.
+- [ ] Anfrage-Funktion für Unterstützung ist vorhanden.
+  - Beispiel: Nutzer erstellt „Brauche Hilfe bei EF Core".
+- [ ] Andere Nutzer können auf Anfragen reagieren.
+  - Beispiel: Kollege markiert „Ich kann helfen".
+- [ ] Ergebnisse sind im Frontend verständlich dargestellt.
+  - Beispiel: Trefferliste mit Name, Skill-Level und Kontaktweg.
+
 **Aufgaben:**
 - [ ] Skill-Suche (nach Name, Level, User, Zertifikat, etc.)
    - UI: Suchmaske, Ergebnisanzeige
@@ -99,6 +130,15 @@ Ab hier hast du komplette Freiheit wie du es baust, hauptsache die Grundlegenden
 ### **Meilenstein 4: Know-how-Transfer**
 
 **Ziel:** Nutzer können KnowHow Transfers erstellen oder Anfragen (beachte das abzubilden). Andere Nutzer können sich anmelden als Hörer oder Speaker. 
+
+### **Features-Checkliste (einfach erklärt):**
+- [ ] Transfer-Termine können erstellt und verwaltet werden.
+  - Beispiel: „Vortrag: Git Basics am Freitag 10:00".
+- [ ] Rollen sind klar: Speaker und Hörer.
+  - Beispiel: Ein Nutzer bietet an, ein anderer meldet sich als Teilnehmer.
+- [ ] Anfragen und Rückmeldungen sind nachvollziehbar.
+  - Beispiel: Status „offen", „bestätigt", „abgesagt".
+- [ ] Die Transfer-Sektion ist im UI getrennt von der normalen Skillsuche.
 
 **Aufgaben:**
 - [ ] Know How Transfer Sektion 
@@ -117,6 +157,14 @@ Ab hier setze ich dir keine Aufgaben mehr, da du selbst planen sollst.
 
 **Ziel:** Beiträge/Vorträge im System ablegen, durchsuchen, verknüpfen
 
+### **Features-Checkliste (einfach erklärt):**
+- [ ] Eigener Service läuft unabhängig vom Hauptsystem.
+  - Beispiel: Der Wissensspeicher hat eine eigene API-Adresse.
+- [ ] Beiträge können erstellt und gesucht werden.
+  - Beispiel: Suche nach „Onboarding" zeigt passende Einträge.
+- [ ] Inhalte können miteinander verknüpft werden.
+  - Beispiel: Ein Zertifikatseintrag verweist auf einen passenden Vortrag.
+
 **Empfohlene Technologien:**
 - REST, eigene API, eigene Tabellen 
 - optional eigene DB - z.B. bei Postgres in ein Cluster möglich, bei MSSQL musst du schauen ob es deine Version zulässt
@@ -124,6 +172,14 @@ Ab hier setze ich dir keine Aufgaben mehr, da du selbst planen sollst.
 ### **Meilenstein 6: Notification-Service - eigener Webservice (optional, fortgeschritten)**
 
 **Ziel:** Asynchrone Benachrichtigungen bei Transfers/Anfragen
+
+### **Features-Checkliste (einfach erklärt):**
+- [ ] Benachrichtigungen werden im Hintergrund verarbeitet.
+  - Beispiel: Bei neuer Anfrage wird automatisch eine Nachricht erzeugt.
+- [ ] Der Service funktioniert ohne direktes Frontend.
+  - Beispiel: Test über API-Call oder Queue-Nachricht.
+- [ ] Fehler im Notification-Service stoppen nicht die Hauptanwendung.
+  - Beispiel: Anfrage wird gespeichert, auch wenn Versand kurz ausfällt.
 
 **Empfohlene Technologien:**
 - RabbitMQ, Rebus(optional), eigene API

@@ -33,6 +33,15 @@
 - [ ] While-Loop für mehrfache Verwendung
 - [ ] Fehlerbehandlung bei ungültiger Eingabe
 
+### **💡 Kurz erklärt:**
+- **Passwort-Länge festlegen:** Nutzer bestimmt, wie lang das Passwort sein soll.
+  - Beispiel: Bei Eingabe „8" wird ein Passwort mit 8 Zeichen erzeugt.
+- **Eingabe-Validierung:** Ungültige Werte werden abgefangen und erklärt.
+  - Beispiel: Bei „2" erscheint ein Hinweis „Bitte mindestens 4 Zeichen".
+- **While-Loop für Wiederholung:** Nach jedem Passwort kann direkt ein neues erzeugt werden.
+  - Beispiel: Erst ein 8er-Passwort, danach sofort ein 12er-Passwort.
+- **Beenden mit 0:** Der Nutzer kann die App klar und bewusst verlassen.
+
 ### **🔧 Benötigte Python-Funktionen/Strukturen:**
 - **Grundlegende Syntax:**
   - `print()` - Ausgabe
@@ -74,11 +83,19 @@
 ### **📋 Features Checkliste für diesen Schritt:**
 - [ ] PasswordGenerator-Klasse erstellen
 - [ ] Verschiedene Zeichen-Sets (Kleinbuchstaben, Großbuchstaben, Zahlen, Sonderzeichen)
-- [ ] Optionen für jeden Zeichen-Typ (ja/nein Abfrage)
+- [ ] Optionen für jeden Zeichen-Typ (z.B. ja/nein Abfrage)
 - [ ] Menü-System mit Nummern-Navigation
 - [ ] Passwort-Stärke Bewertungsystem
 - [ ] Option zum Bewerten existierender Passwörter
 - [ ] Erweiterte Längen-Validierung (4-50 Zeichen)
+
+### **💡 Kurz erklärt:**
+- **Zeichen-Sets auswählen:** Nutzer entscheidet, welche Zeichentypen erlaubt sind.
+  - Beispiel: Nur Kleinbuchstaben + Zahlen, aber keine Sonderzeichen.
+- **Menü-Navigation:** Funktionen werden über Zahlen ausgewählt.
+  - Beispiel: „1 = Passwort generieren", „2 = Passwort bewerten".
+- **Passwort-Stärke bewerten:** Das Programm gibt eine Einschätzung zur Sicherheit.
+  - Beispiel: „abc123" = schwach, „Ab9$kL2!" = stark.
 
 ### **🔧 Benötigte Python-Funktionen/Strukturen:**
 - **Objektorientierung:**
@@ -127,6 +144,14 @@
 - [ ] Eingabe-Validierung mit Popup-Fenstern
 - [ ] Basis-Styling (Farben, Schriftarten)
 
+### **💡 Kurz erklärt:**
+- **Checkboxen:** Nutzer aktiviert nur die gewünschten Passwort-Bausteine.
+  - Beispiel: Haken bei „Zahlen" und „Sonderzeichen", ohne Großbuchstaben.
+- **Readonly-Ausgabe:** Das Passwort kann gelesen und kopiert, aber nicht aus Versehen geändert werden.
+- **Kopieren in Zwischenablage:** Ein Klick übernimmt das Passwort direkt zum Einfügen.
+  - Beispiel: Danach in ein Formular mit Strg+V einfügen.
+- **Popup bei Fehlern:** Statt still zu scheitern zeigt die App verständliche Hinweise in ein Popup-Fenster.
+
 ### **🔧 Benötigte Python-Funktionen/Strukturen:**
 - **tkinter Basics:**
   - `tkinter as tk`
@@ -172,7 +197,7 @@
 ## 🎨 **Schritt 4: Verbessertes Design & Schieberegler**
 
 ### **📋 Features Checkliste für diesen Schritt:**
-- [ ] Farbiger Header-Bereich (blau)
+- [ ] Farbiger Header-Bereich
 - [ ] LabelFrame für Sektionen-Gruppierung
 - [ ] Schieberegler (Scale) für Passwort-Länge (4-32)
 - [ ] Dynamisches Label zeigt aktuelle Länge
@@ -181,6 +206,15 @@
 - [ ] Passwort-Stärke Anzeige mit Farb-Coding
 - [ ] Professionelleres Layout mit mehreren Frames
 - [ ] Verbessertes Eingabefeld-Design
+
+### **💡 Kurz erklärt:**
+- **Schieberegler für Länge:** Die Länge wird visuell eingestellt statt per Zahleneingabe.
+  - Beispiel: Regler nach rechts auf 20 ziehen.
+- **Dynamisches Label:** Nutzer sieht sofort, welcher Wert aktuell gewählt ist.
+  - Beispiel: Neben dem Regler steht live „Länge: 20".
+- **Farb-Coding bei Stärke:** Sicherheit wird zusätzlich über Farben signalisiert.
+  - Beispiel: Rot = schwach, Gelb = mittel, Grün = stark.
+- **Sektionen mit LabelFrame:** Optionen werden in klaren Gruppen angezeigt.
 
 ### **🔧 Benötigte Python-Funktionen/Strukturen:**
 - **Advanced Widgets:**
@@ -223,16 +257,25 @@
 ## 📊 **Schritt 5: Historie & Multiple Passwörter**
 
 ### **📋 Features Checkliste für diesen Schritt:**
-- [ ] Passwort-Historie Liste im Hintergrund
 - [ ] "5 Passwörter generieren" Button
+  - [ ] Popup-Fenster für 5 Multiple Passwörter
+  - [ ] "Alle kopieren" Funktion im Multiple-Fenster
 - [ ] "Historie anzeigen" Button
-- [ ] Popup-Fenster für 5 Multiple Passwörter
-- [ ] "Alle kopieren" Funktion im Multiple-Fenster
-- [ ] Historie-Fenster mit scrollbarer Liste
-- [ ] Zeitstempel für jedes generierte Passwort
-- [ ] Passwort-Stärke in der Historie
-- [ ] "Historie löschen" Funktion mit Bestätigung
-- [ ] Begrenzung auf letzte 20 Passwörter
+  - [ ] Passwort-Historie Liste im Hintergrund
+  - [ ] Historie-Fenster mit scrollbarer Liste
+    - [ ] Begrenzung auf letzte 20 Passwörter
+  - [ ] Passwort-Stärke in der Historie
+  - [ ] "Historie löschen" Funktion mit Bestätigung
+  - [ ] Zeitstempel für jedes generierte Passwort
+
+### **💡 Kurz erklärt:**
+- **Historie:** Die letzten erzeugten Passwörter werden gespeichert, damit man sie wiederfindet.
+  - Beispiel: Nach 3 Generierungen sind alle 3 in der Liste sichtbar.
+- **5er-Generierung:** Mehrere Varianten auf einmal, um schneller auszuwählen.
+  - Beispiel: Statt einzeln fünfmal klicken, nur einmal klicken.
+- **Zeitstempel + Stärke:** Jedes Passwort bekommt Kontext.
+  - Beispiel: „14:22 | stark | Xy7!pQ9...".
+- **Limit auf 20 Einträge:** Die Liste bleibt übersichtlich und wächst nicht endlos.
 
 ### **🔧 Benötigte Python-Funktionen/Strukturen:**
 - **Data Structures:**
@@ -287,6 +330,16 @@
 - [ ] Erweiterte Passwort-Stärke Bewertung (Score-System)
 - [ ] Sauberes Beenden mit Einstellungen-Speicherung
 - [ ] Vollständige Fehlerbehandlung für alle Funktionen
+
+### **💡 Kurz erklärt:**
+- **Einstellungen speichern/laden:** Die App merkt sich die letzte Konfiguration.
+  - Beispiel: Beim nächsten Start sind Länge und Optionen wie zuvor gesetzt.
+- **Export:** Historie kann als Datei weitergegeben oder archiviert werden.
+  - Beispiel: Teamleiter erhält eine TXT-Datei mit Testpasswörtern.
+- **Mehrdeutige Zeichen ausschließen:** Verwechslungszeichen werden vermieden.
+  - Beispiel: Zeichen wie O und 0 oder l und 1 werden nicht genutzt.
+- **Garantierter Mix:** Bei aktivierten Kategorien kommt aus jeder Kategorie mindestens ein Zeichen vor.
+  - Beispiel: Bei Auswahl Groß/Klein/Zahl/Sonderzeichen enthält das Passwort alle 4 Typen.
 
 ### **🔧 Benötigte Python-Funktionen/Strukturen:**
 - **File I/O:**
