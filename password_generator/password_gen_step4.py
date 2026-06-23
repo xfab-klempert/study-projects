@@ -7,7 +7,7 @@ class PasswordGeneratorGUI:
     def __init__(self):
         self.window = tk.Tk()
         self.window.title("🔐 Passwort Generator")
-        self.window.geometry("500x550")
+        self.window.geometry("500x600")
         self.window.configure(bg="#f0f0f0")
         
         # Zeichen-Sets
