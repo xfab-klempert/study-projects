@@ -10,7 +10,7 @@ class PasswordGenerator:
     def __init__(self):
         self.window = tk.Tk()
         self.window.title("🔐 Passwort Generator")
-        self.window.geometry("610x620")
+        self.window.geometry("850x620")
         self.window.configure(bg="#f0f0f0")
         self.window.resizable(True, True)
         
